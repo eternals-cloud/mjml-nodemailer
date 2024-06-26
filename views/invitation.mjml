@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-class name="blue" background-color="#f1f5f9" />
+      <mj-class name="fontFamily" font-family="Roboto,sans-serif" color="#293032" />
+      <mj-class name="background" background='#e0edf2' />
+      <mj-button background-color="#581c87" color="#ffffff" font-family="Roboto,sans-serif" font-size="12px" font-weight="500" align="center" border-radius="5px" />
+      <mj-image padding="0px,0px,0px" align="left" />
+    </mj-attributes>
+    <mj-style>
+      .body {
+        color: #293032 !important;
+        border-radius: 10px !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f1f5f9">
+    <mj-wrapper padding="20px">
+    
+      {{ slots:header }}
+
+      <mj-section padding="0px 10px 10px 10px" background-color="#FFFFFF">
+        <mj-column>
+          <mj-text mj-class="fontFamily" font-size="20px" font-weight="800">Hi {{last_name}} {{first_name}}!</mj-text>
+          <mj-text mj-class="fontFamily" font-size="14px" line-height="20px">We are thrilled to have you on board, and we can't wait to embark on this exciting journey together.</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px 10px 10px 10px" background-color="#FFFFFF">
+        <mj-raw>{{ #data }}</mj-raw>
+        <mj-column background-color="#f1f5f9" border-radius="5px">
+          <mj-text mj-class="fontFamily" font-size="14px" line-height="20px" padding="10px" color="#384860">{{client}}</mj-text>
+        </mj-column>
+
+        <mj-column background-color="#f1f5f9" border-radius="5px">
+          <mj-text mj-class="fontFamily" font-size="14px" line-height="20px" padding="10px" color="#384860">{{total}}</mj-text>
+        </mj-column>
+        <mj-raw>{{ /data }}</mj-raw>
+      </mj-section>
+
+      <mj-section padding="0px 30px 10px 30px" background-color="#FFFFFF" border-radius="10px 10px 0px 0px">
+        <mj-column background-color="#f1f5f9" border-radius="5px">
+          <mj-text mj-class="fontFamily" font-size="14px" line-height="20px" padding="10px" color="#384860">Username: <b>{{ username }}</b></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px 30px 0px 30px" background-color="#FFFFFF" border-radius="10px 10px 0px 0px">
+        <mj-column>
+          <mj-text mj-class="fontFamily" font-size="14px" padding="5px 5px 10px 5px" line-height="20px">To get started, please activate your account by clicking the below button.</mj-text>
+          <mj-button mj-class="fontFamily" href="{{ link }}" align="center" color="#FFFFFF">Activate your account!</mj-button>
+          <mj-text mj-class="fontFamily" font-size="14px" padding="5px 5px 10px 5px" line-height="20px">If the link doesn't work, you can copy and paste the following URL into your browser:</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px 30px 20px 30px" background-color="#FFFFFF">
+        <mj-column background-color="#f1f5f9" padding="5px" border-radius="5px">
+          <mj-text mj-class="fontFamily" font-size="14px" padding="5px 10px" line-height="20px">{{ link }}</mj-text>
+        </mj-column>
+      </mj-section>
+
+      {{ slots:footer }}
+
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

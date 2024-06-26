@@ -1,0 +1,20 @@
+<mj-section padding="0px 30px 0px 30px" background-color="#FFFFFF">
+  <mj-column>
+    <mj-text mj-class="fontFamily" font-size="14px" padding="5px" line-height="20px">Thank you for choosing <b>{{company}}</b>. We look forward to achieving great things together!</mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0px 30px 0px 30px" background-color="#FFFFFF">
+  <mj-column>
+    <mj-text mj-class="fontFamily" padding="5px 5px 5px 5px">
+      <hr />
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0px 30px 25px 30px" background-color="#FFFFFF" border-radius="0px 0px 10px 10px">
+  <mj-column>
+    <mj-text mj-class="fontFamily" font-size="14px" padding="5px" line-height="5px" color="#64748b">Note: This link is valid until <b>{{duration}}</b>.</mj-text>
+    <mj-text mj-class="fontFamily" font-size="12px" padding="5px" line-height="20px" color="#64748b">Please ignore this email. If you already activated your account or if you're not <b>{{username}}</b>!</mj-text>
+  </mj-column>
+</mj-section>
