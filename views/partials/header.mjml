@@ -1,0 +1,5 @@
+      <mj-section padding="25px 30px 25px 30px" background-color="#FFFFFF" border-radius="10px 10px 0px 0px">
+        <mj-column>
+          <mj-image mj-class="logo" src="https://ik.imagekit.io/ce9bd928/logos/logo.png" alt="Compant Logo" width="120px" />
+        </mj-column>
+      </mj-section>
